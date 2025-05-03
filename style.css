@@ -1,3 +1,5 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
 
 * {
@@ -14,6 +16,7 @@ body {
   min-height: 100vh;
   width: 100%;
   padding: 0 10px;
+  position: relative;
 }
 
 body::before {
@@ -21,9 +24,10 @@ body::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-color: #000;
+  background: #000
+    url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    center/cover no-repeat;
+  z-index: -1;
 }
 
 .wrapper {
@@ -34,6 +38,7 @@ body::before {
   border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
+  position: relative;
 }
 
 form {
@@ -74,8 +79,8 @@ h2 {
   color: #fff;
 }
 
-.input-field input:focus~label,
-.input-field input:valid~label {
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
   font-size: 0.8rem;
   top: 10px;
   transform: translateY(-120%);
@@ -96,6 +101,7 @@ h2 {
 .forget label {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .forget label p {

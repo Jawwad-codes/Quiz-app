@@ -1,20 +1,32 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="quiz.css">
-
-</head>
-<body>
-    <h1>Hello Quiz app</h1>
-    <div class="wrapper">
-    <div class="container">
-    <div id="quiz"></div>
-    <button id="nextButton" disabled onclick="Nextquestion()">Next</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="logout-container">
+      <a href="index.html" class="logout-btn">Logout</a>
     </div>
-</div>
+    <div>
+      <h1>Quiz app</h1>
+      <div class="wrapper">
+        <div class="container">
+          <div id="quiz"></div>
+          <div id="btn-quiz">
+            <button id="prevButton" onclick="prevQuestion()">Prev</button>
+            <button id="nextButton" disabled onclick="Nextquestion()">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="quiz.js"></script>
-</body>
+  </body>
 </html>

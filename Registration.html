@@ -1,39 +1,41 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="wrapper">
-    <form id="registerForm" onsubmit="return addUserData()">
-      <h2>Register</h2>
-      <div class="input-field">
-        <input type="text" required id="name">
-        <label>Enter your name</label>
-      </div>
-      <div class="input-field">
-        <input type="email" required id="email">
-        <label>Enter your email</label>
-      </div>
-      <div class="input-field">
-        <input type="password" required id="password">
-        <label>Enter your password</label>
-      </div>
-      <div class="input-field">
-        <input type="password" required id="confirm">
-        <label>Confirm password</label>
-      </div>
-      <button type="submit">Sign up</button>
-      <div class="register">
-        <p>Already have an account? <a href="index.html">Sign in</a></p>
-      </div>
-      <p id="errorMessage" style="color:red;"></p>
-    </form>
-  </div>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="registerForm">
+        <h2>Register</h2>
+        <div class="input-field">
+          <input type="text" required id="name" />
+          <label>Enter your name</label>
+        </div>
+        <div class="input-field">
+          <input type="email" required id="email" />
+          <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" required id="password" />
+          <label>Enter your password</label>
+        </div>
+        <div class="input-field">
+          <input type="password" required id="confirm" />
+          <label>Confirm password</label>
+        </div>
+        <button type="submit">Sign up</button>
+        <div class="register">
+          <p>Already have an account? <a href="index.html">Sign in</a></p>
+        </div>
+        <p id="errorMessage" style="color: red"></p>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
