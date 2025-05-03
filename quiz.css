@@ -87,11 +87,16 @@ button:hover {
 
 #btn-quiz {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 10px;
   margin-top: 1.5rem;
+  flex-direction: row;
 }
+
+#btn-quiz > div {
+  flex: 1;
+}
+
 .logout-container {
   position: fixed;
   top: 20px;
@@ -164,5 +169,14 @@ button:hover {
   .logout-btn {
     padding: 6px 12px;
     font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #btn-quiz {
+    flex-direction: column; /* Stack buttons on small screens */
+  }
+
+  #btn-quiz > div {
+    width: 100%;
   }
 }
