@@ -11,7 +11,7 @@ function addUserData(e) {
   errorMessage.textContent = "";
 
   if (name.trim() === "") {
-    errorMessage.textContent = "Name is required.";
+    errorMessage.textContent = "Name is required";
     return false;
   }
   if (password.length < 8) {
